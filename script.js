@@ -115,6 +115,7 @@ async function displayWeather(city_name) {
                 .then(data => {
                     console.log(data);
                     var weatherIcon = data['current']['weather'][0]['icon'];
+                    //creating weather icon using the api documentation
                     weatherImage.setAttribute("src", `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`);
                     var tempValue = data['current']['temp'];
                     console.log(tempValue);
@@ -157,6 +158,7 @@ async function displayWeather(city_name) {
         });
 }
 
+// creating an async function for the five day forecast
 async function displayFiveDayForecast(city_name) {
 
 

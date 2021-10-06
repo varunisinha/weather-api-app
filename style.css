@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Using bootstrap containers to make styling more efficent and neat */
 .jumbotron-fluid{
   background-image:linear-gradient(to right, #3C6DC3, #230755);
   color: whitesmoke;
