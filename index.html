@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
+    <!-- Writing a suitable title for SEO purposes -->
+    <title>Weather-api-app</title>
+    <!-- Using bootstrap for efficient layout work and design -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <!-- creating relevant containers with ids and classnames to pull up later on in javascript and populate with data -->
     <div class="jumbotron-fluid">
         <h1>Weather Dashboard</h1>
     </div>
@@ -27,6 +30,7 @@
                 </div>
             </div>
             <div class="col-9">
+                <!-- Creating containers to populate data with -->
                 <div class="container current-weather">
                     <div class="card-body">
                         <div class="cityName h2"></div>
@@ -45,6 +49,7 @@
             </div>
         </div>
     </div>
+    <!-- linking with jquery here to simplify javascript commands later on -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
