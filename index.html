@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="jumbotron-fluid">
+        <h1>Weather Dashboard</h1>
+    </div>
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-3">
+                <div class="form-group">
+                    <h2>Search for the City:</h2>
+                    <input class="form-control" id="inputCityName" type="text" placeholder="Enter City name">
+                    <button class="btn btn-primary btn-lg btn-block" id="searchBtn">Search</button>
+                </div>
+                <div class="list-group" id="cityList">
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="container current-weather">
+                    <div class="card-body">
+                        <div class="cityName h2"></div>
+                        <div class="date h2"></div>
+                        <img class="weatherIcon">
+                    </div>
+                    <p class="card-text temp h4"></p>
+                    <p class="card-text wind h4"></p>
+                    <p class="card-text humidity h4"></p>
+                    <p class="card-text uvi h4"></p>
+                </div>
+                <div id="forecastContainer">
+                    <h2 class="heading"></h2>
+                    <!-- <div class="card-deck" id="forecastContainer"></div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
